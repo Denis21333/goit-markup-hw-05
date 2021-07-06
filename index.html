@@ -57,7 +57,18 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="button" type="button">Заказать услугу</button>
+        <button data-modal-open class="button" type="button">Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal" >
+            <p>Heloo,Heloo,Heloo,Heloo,Heloo,Heloo,
+              Heloo,Heloo,Heloo,Heloo,Heloo,Heloo,Heloo,
+              Heloo,Heloo,Heloo,Heloo,Heloo,Heloo,Heloo,
+              Heloo,Heloo,Heloo,Heloo,Heloo,Heloo,Heloo,
+              Heloo,Heloo,Heloo,Heloo,Heloo,Heloo,Heloo,
+            </p>
+            <button data-modal-close >Закрыть</button>
+          </div>
+        </div>
       </div>
     </section>
     <!--Секция будушего-->
@@ -121,15 +132,24 @@
       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
+          <div class="work-div" >
+            <li class="img-title">
+              <img class="img-box1" src="./images/box1.jpg" alt="work with gadgets" width="370" height="294" />
+              <p class="work-information">Десктопные приложения</p>
+            </li>
+          </div>
+          <div class="work-div" >
           <li class="img-title">
-            <img src="./images/box1.jpg" alt="work with gadgets" width="370" height="294" />
+            <img  src="./images/box2.jpg" alt="work with gadgets" width="370" height="294" />
+            <p class="work-information">Мобильные приложения</p>
           </li>
-          <li class="img-title">
-            <img src="./images/box2.jpg" alt="work with gadgets" width="370" height="294" />
-          </li>
+          </div>
+          <div class="work-div" >
           <li class="img-title">
             <img src="./images/box3.jpg" alt="work with gadgets" width="370" height="294" />
+            <p class="work-information"> Дизайнерские решения</p>
           </li>
+          </div>
         </ul>
       </div>
     </section>
@@ -363,6 +383,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
