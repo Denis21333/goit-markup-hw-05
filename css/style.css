@@ -93,7 +93,7 @@ color: var(--secondary-text-color);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color:var(--secondary-text-color );
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
@@ -105,7 +105,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var( --primary-text-color );
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .contact-item:not(:last-child){
@@ -127,6 +128,7 @@ color: var(--accent-color);
 
  .contact-link:hover .svg-mail{
 fill: var(--accent-color);
+transition-duration: 250ms;
 } 
 
 .contact-link:focus .svg-mail{
@@ -165,7 +167,7 @@ fill: var(--accent-color);
   fill: var(--primary-text-color);
 }
 
-.site-link::after{
+.after-link::after{
   content: "";
   display: block;
   width:100% ;
@@ -174,17 +176,11 @@ fill: var(--accent-color);
   border-radius: 2px;
   position: absolute;
   top: 46px;
-  opacity:0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.site-link:hover::after
-{
-opacity:1;
-}
-.site-link:focus::after{
-  opacity: 1;
-}
+
+
 
 
 
